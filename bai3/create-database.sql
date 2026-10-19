@@ -1,0 +1,5 @@
+IF DB_ID(N'QL_DaNgoai') IS NULL CREATE DATABASE [QL_DaNgoai];
+GO
+USE [QL_DaNgoai];
+CREATE TABLE dbo.ChuyenDi(MaChuyen int IDENTITY PRIMARY KEY,TenChuyen nvarchar(100) NOT NULL,DiaDiem nvarchar(100) NOT NULL,NgayDi date NOT NULL,SoNguoi int NOT NULL,NganSach decimal(18,0) NOT NULL,PhuongTien nvarchar(30) NOT NULL,DaHoanThanh bit NOT NULL,GhiChu nvarchar(200) NULL); INSERT dbo.ChuyenDi VALUES(N'Cuối tuần Đà Lạt',N'Da Lat',DATEADD(day,3,GETDATE()),3,5000000,N'Xe khách',0,NULL),(N'Săn mây Sa Pa',N'Sa Pa',DATEADD(day,5,GETDATE()),4,8000000,N'Tàu hỏa',0,NULL),(N'Nghỉ biển Vũng Tàu',N'Vung Tau',DATEADD(day,7,GETDATE()),2,3000000,N'Ô tô',0,NULL),(N'Phố cổ Hội An',N'Hoi An',DATEADD(day,9,GETDATE()),4,6500000,N'Xe máy',0,NULL),(N'Khám phá Huế',N'Hue',DATEADD(day,11,GETDATE()),2,4000000,N'Tàu hỏa',0,NULL),(N'Trekking Hà Giang',N'Ha Giang',DATEADD(day,13,GETDATE()),5,9000000,N'Xe máy',0,NULL),(N'Biển Nha Trang',N'Nha Trang',DATEADD(day,15,GETDATE()),3,7000000,N'Xe khách',0,NULL),(N'Về miền Tây',N'Can Tho',DATEADD(day,16,GETDATE()),4,5000000,N'Ô tô',0,NULL);
+

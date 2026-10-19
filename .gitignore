@@ -1,0 +1,17 @@
+# Build output
+**/bin/
+**/obj/
+
+# Local secrets and machine-specific settings
+**/appsettings.json
+!**/appsettings.example.json
+**/usersettings.json
+
+# Runtime logs
+**/Logs/
+*.log
+
+# IDE files
+.vs/
+*.user
+*.suo
